@@ -1,0 +1,4136 @@
+@font-face {
+    font-family: 'rajdhani';
+    src: url(../pelicule/Rajdhani-Medium.ttf);
+    }
+    :root {
+        --yellow-color: #ffff00;
+        --yellow-ligth: #f8f184;
+        --blue-color: #19587d;
+        --white-color: #461919;
+        --gradient-white: #EDDEBF;
+        --gradient-red: #890008;
+        --black-color: #000;
+    
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    h1 {
+    font-family: 'rajdhani';
+    font-size: 36px;
+    font-weight: 400%;
+    }
+    button {
+        font-family: 'rajdhani';
+        font-size: 20px;
+        font-weight: 400%;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    body {
+        height: 100%;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-family: space grotesk;
+        font-weight: 300;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 100px;
+
+    }
+    
+    #section1 .up-bar {
+        border-top: 1px #727272 solid;
+        position: absolute;
+        top: 132px;
+        width: 83%;
+        left: 102px;
+        
+    }
+     #section1 .left-bar {
+        border-left: 1px #727272 solid;
+        position: absolute;
+        height: 8055%;
+        width: 102px;
+        left: 102px;
+    }
+     #section1 .right-bar {
+        border-right: 1px #727272 solid;
+        position: absolute;
+        height: 8055%;
+        right: 125px;
+    }
+    .down-bar {
+        border-top: 12px solid #727272;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+    }
+    
+    /* disegn de la naviation*/
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block; /* Affiche les listes côte à côte */  
+    }
+    li {
+        display: inline-block; /* Affiche les éléments <li> côte à côte */
+        margin-right: 20px; /* Espace entre les éléments */
+    }
+
+    li a {
+      color: var(--white-color);
+      font-size: 30px;
+      font-weight: 500;
+      font-family: rajdhani;
+    }
+    nav ul a:hover {
+    color: var(--yellow-color);
+    }
+    p {
+        font-size: 20px;
+    }
+    /* design de la partie entete hero*/
+    #hero {
+        background-image: url(Batgame_1.png);
+        height: 800px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+            margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+        
+        
+    }
+    #hero .mari{
+        position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+        top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+        right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+        z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+    #hero .ts{
+        font-size: 20px;
+        padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+        margin: 50px 0;
+        outline: none;
+    }
+    
+    #hero .flèche{
+        display: block;
+        margin: 50px auto;
+        padding-top: 50px;
+    }
+    /* design de la partie batman chevalier*/
+    #container-1{
+        display: flexbox;
+        padding-top: 100px;
+    }
+    .sal-1 {
+        text-align: center;
+        
+    
+    }
+    #container-1.tete-1{
+        text-align: center;
+        justify-content: center; /* Centre horizontalement */
+        align-items: center; /* Centre verticalement */
+        padding-top: 50px;
+    }
+    #container-1 .sedou-1{
+        padding-top: 20px;
+    
+    }
+    .sedou-1 {
+        display: flex;
+        justify-content: center;
+    }
+    #container-1 .center-1 {
+        display: flex;
+        justify-content: center; /* Centre le bouton horizontalement */
+        padding: 100px 100px; /* Espace au-dessus du bouton */
+    }
+    #container-1 .btn-1{
+        display: inline-block;
+        padding: 16px 35px;
+        text-decoration: none;
+        color: var(--gradient-white); /* Couleur du texte */
+        background: linear-gradient(to right, #404040, #FFA500);
+        border: none; /* Bordure autour du bouton */
+        border-radius: none; /* Coins arrondis */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+            
+        }
+        
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 80px;
+        top: 230px;
+    }
+    .scroll .social{
+        margin-top: 15;
+    }
+    .right {
+        right: -85%;
+    
+    }
+    
+    /* design de la partie footer*/
+    
+    footer{
+        margin-top: 162px;
+    }
+    footer .text-footer{
+        text-align: center;
+        font-size: 14px;
+    }
+    footer .social-footer{
+        text-align: center;
+        margin: 50px 0;
+    }
+    footer .social-item{
+        padding: 15px;
+    }
+    .hover:hover{
+        
+        filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+    }
+    .batman-item:hover {
+        transform: scale(1.1); 
+    }
+    footer .social-s{
+        text-align: center;
+        margin: 50px 0;
+
+    }
+
+
+
+    /* design de la partie section2*/ /*design de la section2*/ /*design de la section2*/
+    #section2 .up-bar {
+        border-top: 1px #727272 solid;
+        position: absolute;
+        top: 132px;
+        width: 83%;
+        left: 102px;
+    }
+    #section2 .left-bar {
+        border-left: 1px #727272 solid;
+        position: absolute;
+        height: 1055%;
+        width: 102px;
+        left: 102px;
+    }
+    #section2 .right-bar {
+        border-right: 1px #727272 solid;
+        position: absolute;
+        height: 1055%;
+        right: 125px;
+    }
+    .down-bar {
+        border-top: 5px solid #727272;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+    }
+    
+    /* design de la naviation*/
+     nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block; /* Affiche les listes côte à côte */  
+    }
+     li {
+        display: inline-block; /* Affiche les éléments <li> côte à côte */
+        margin-right: 20px; /* Espace entre les éléments */
+    }
+    li .home{
+        text-decoration: none;
+    }
+
+    
+    li a {
+      color:  white;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: rajdhani;
+      /*text-decoration: none;*/
+    }
+    nav ul a:hover {
+    color: var(--yellow-color);
+    }
+    p {
+        font-size: 20px;
+    }
+    /* design de la partie entete hero*/
+    #hero {
+        background-image: url(Batgame_1.png);
+        height: 800px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+            margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+        
+        
+    }
+    #hero .mari{
+        position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+        top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+        right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+        z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+    #hero .ts{
+        font-size: 20px;
+        padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+        margin: 50px 0;
+        outline: none;
+    }
+    
+    article p {
+        text-align: center;
+        padding: 100px 620px;
+    }
+    /* design du containeur homme mister*/ 
+    #container-2{
+        display: flexbox;
+        padding-top: 30px;
+    }
+    .sal2 {
+        margin-right: -60px;
+    }
+    
+    .tete2 {
+        text-align: center;
+        justify-content: center; /* Centre horizontalement */
+        align-items: center; /* Centre verticalement */
+        padding-top: 50px;
+        
+    }
+    .quiz_rep {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        gap: 10px; /* Ajoute de l'espace entre les lignes */
+        max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+        width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+        padding: 20px 400px; /* Enlève le padding du conteneur principal */
+    }
+    
+    /* Conteneur des réponses */
+    .rep_group {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+        color: #fff; /* Couleur du texte (blanc) */
+        font-weight: bold; /* Texte en gras */
+        width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+    }
+    
+    /* Style de la case à cocher */
+    .rep_group input[type="checkbox"] {
+        margin-right: 10px; /* Espace entre la case à cocher et le texte */
+    }
+    .left2 {
+        position: absolute;
+        background-size: 1Opx;
+        top: 3250px;
+        background: none;
+        border: none;
+        left: 265px;
+    }
+    
+    /* Conteneur du bouton */
+    #container-2 .center2{
+        display: flex;
+        justify-content: center; /* Centre le bouton horizontalement */
+        padding-top: 120px; /* Espace au-dessus du bouton */
+        margin-left: -310px;
+    }
+
+    .btn2:hover {
+        background-color: #0056b3; /* Couleur de fond du bouton au survol */
+    }
+    
+    .btn2 {
+        display: inline-block;
+        padding: 16px 30px;
+        text-decoration: none;
+        color: var(--gradient-white); /* Couleur du texte */
+        background: linear-gradient(to right, #404040, #FFA500);
+        border: none; /* Bordure autour du bouton */
+        border-radius: none; /* Coins arrondis */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+            
+        }
+        
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 80px;
+        top: 230px;
+    }
+    .scroll .social{
+        margin-top: 15;
+    }
+    .right {
+        right: -85%;
+    
+    }
+    
+    /* design de la partie footer*/
+    
+    footer{
+        margin-top: 162px;
+    }
+    footer .text-footer{
+        text-align: center;
+        font-size: 14px;
+    }
+    footer .social-footer{
+        text-align: center;
+        margin: 50px 0;
+    }
+    footer .social-item{
+        padding: 15px;
+    }
+    .hover:hover{
+        
+        filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+    }
+    .batman-item:hover {
+        transform: scale(1.1); 
+    }
+    footer .social-s{
+        text-align: center;
+        margin: 50px 0;
+
+    }
+
+
+
+    /* design de la partie section3*/ /*design de la section3*/ /*design de la section3*/
+    #section3 .up-bar {
+        border-top: 1px #727272 solid;
+        position: absolute;
+        top: 132px;
+        width: 83%;
+        left: 102px;
+    }
+    #section3 .left-bar {
+        border-left: 1px #727272 solid;
+        position: absolute;
+        height: 1055%;
+        width: 102px;
+        left: 102px;
+    }
+    #section3 .right-bar {
+        border-right: 1px #727272 solid;
+        position: absolute;
+        height: 1055%;
+        right: 125px;
+    }
+    .down-bar {
+        border-top: 5px solid #727272;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+    }
+    
+    /* design de la naviation*/
+     nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block; /* Affiche les listes côte à côte */  
+    }
+     li {
+        display: inline-block; /* Affiche les éléments <li> côte à côte */
+        margin-right: 20px; /* Espace entre les éléments */
+    }
+    li .home{
+        text-decoration: none;
+    }
+
+    
+    li a {
+      color:  white;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: rajdhani;
+      /*text-decoration: none;*/
+    }
+    nav ul a:hover {
+    color: var(--yellow-color);
+    }
+    p {
+        font-size: 20px;
+    }
+    /* design de la partie entete hero*/
+    #hero {
+        background-image: url(Batgame_1.png);
+        height: 800px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+            margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+        
+        
+    }
+    #hero .mari{
+        position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+        top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+        right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+        z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+    #hero .ts{
+        font-size: 20px;
+        padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+        margin: 50px 0;
+        outline: none;
+    }
+    
+    article p {
+        text-align: center;
+        padding: 100px 620px;
+    }
+    /* design de l'article Harley Quinn*/
+    #container-3 {
+        display: flexbox;
+        padding-top: 30px;
+    }
+    .sal3 {
+        margin-right: -130px;
+    }
+    .tete3 {
+        text-align: center;
+        justify-content: center; /* Centre horizontalement */
+        align-items: center; /* Centre verticalement */
+        padding-top: 50px;
+    }
+    .quiz_rep {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        gap: 10px; /* Ajoute de l'espace entre les lignes */
+        max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+        width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+        padding: 20px 400px; /* Enlève le padding du conteneur principal */
+    }
+    
+    /* Conteneur des réponses */
+    .rep_group {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+        color: #fff; /* Couleur du texte (blanc) */
+        font-weight: bold; /* Texte en gras */
+        width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+    }
+    
+    /* Style de la case à cocher */
+    .rep_group input[type="checkbox"] {
+        margin-right: 10px; /* Espace entre la case à cocher et le texte */
+    }
+    .left3 {
+        position: absolute;
+        background-size: 1Opx;
+        top: 5060px;
+        background: none;
+        border: none;
+        left: 250px;
+    }
+    
+    /* Conteneur du bouton */
+    .center3 {
+        display: flex;
+        justify-content: center; /* Centre le bouton horizontalement */
+        padding-top: 50px 550px; /* Espace au-dessus du bouton */
+        margin-left: -330px;
+    }
+    
+    .btn3:hover {
+        background-color: #0056b3; /* Couleur de fond du bouton au survol */
+    }
+    
+    .center3 {
+        text-align: center;
+        padding: 140px;
+        
+    }
+    .btn3 {
+        display: inline-block;
+        padding: 16px 27px;
+        text-decoration: none;
+        color: var(--gradient-white); /* Couleur du texte */
+        background: linear-gradient(to right, #404040, #FFA500);
+        border: none; /* Bordure autour du bouton */
+        border-radius: none; /* Coins arrondis */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+            
+        }
+        
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 80px;
+        top: 230px;
+    }
+    .scroll .social{
+        margin-top: 15;
+    }
+    .right {
+        right: -85%;
+    
+    }
+    
+    /* design de la partie footer*/
+    
+    footer{
+        margin-top: 162px;
+    }
+    footer .text-footer{
+        text-align: center;
+        font-size: 14px;
+    }
+    footer .social-footer{
+        text-align: center;
+        margin: 50px 0;
+    }
+    footer .social-item{
+        padding: 15px;
+    }
+    .hover:hover{
+        
+        filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+    }
+    .batman-item:hover {
+        transform: scale(1.1); 
+    }
+    footer .social-s{
+        text-align: center;
+        margin: 50px 0;
+
+    }
+
+
+    /* design de la section4*//* design de la section4*//* design de la section4*/
+    #section4 .up-bar {
+        border-top: 1px #727272 solid;
+        position: absolute;
+        top: 132px;
+        width: 83%;
+        left: 102px;
+    }
+    #section4 .left-bar {
+        border-left: 1px #727272 solid;
+        position: absolute;
+        height: 1055%;
+        width: 102px;
+        left: 102px;
+    }
+    #section4 .right-bar {
+        border-right: 1px #727272 solid;
+        position: absolute;
+        height: 1055%;
+        right: 125px;
+    }
+    .down-bar {
+        border-top: 5px solid #727272;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+    }
+    
+    /* design de la naviation*/
+     nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: inline-block; /* Affiche les listes côte à côte */  
+    }
+     li {
+        display: inline-block; /* Affiche les éléments <li> côte à côte */
+        margin-right: 20px; /* Espace entre les éléments */
+    }
+    li .home{
+        text-decoration: none;
+    }
+
+    
+    li a {
+      color:  white;
+      font-size: 30px;
+      font-weight: 500;
+      font-family: rajdhani;
+      /*text-decoration: none;*/
+    }
+    nav ul a:hover {
+    color: var(--yellow-color);
+    }
+    p {
+        font-size: 20px;
+    }
+    /* design de la partie entete hero*/
+    #hero {
+        background-image: url(Batgame_1.png);
+        height: 800px;
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+            margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+        
+        
+    }
+    #hero .mari{
+        position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+        top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+        right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+        z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+    #hero .ts{
+        font-size: 20px;
+        padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+        margin: 50px 0;
+        outline: none;
+    }
+    
+    article p {
+        text-align: center;
+        padding: 100px 620px;
+    }
+    /* design de la partie batman chevalier*/
+    #container-4 {
+        display: flexbox;
+        padding-top: 30px;
+    }
+    #container-4 .sal4 {
+        margin-left: 13px;
+    }
+    .tete4 {
+        text-align: center;
+        justify-content: center; /* Centre horizontalement */
+        align-items: center; /* Centre verticalement */
+        padding-top: 50px;
+    }
+    .quiz_rep {
+        display: flex;
+        flex-direction: column; /* Aligne les éléments en colonne */
+        gap: 10px; /* Ajoute de l'espace entre les lignes */
+        max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+        width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+        padding: 20px 400px; /* Enlève le padding du conteneur principal */
+    }
+    
+    /* Conteneur des réponses */
+    .rep_group {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+        color: #fff; /* Couleur du texte (blanc) */
+        font-weight: bold; /* Texte en gras */
+        width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+    }
+    
+    /* Style de la case à cocher */
+    .rep_group input[type="checkbox"] {
+        margin-right: 10px; /* Espace entre la case à cocher et le texte */
+    }
+    #container-4 .left4 {
+        position: absolute;
+        background-size: 3Opx;
+        top: 6915px;
+        background: none;
+        border: none;
+        left: 80px;
+    }
+    
+    /* Conteneur du bouton */
+    #container-4 .center4 {
+        display: flex;
+        justify-content: center; /* Centre le bouton horizontalement */
+        padding-top: 20px 550px; /* Espace au-dessus du bouton */
+        margin-left: -330px;
+    }
+    
+    .btn4:hover {
+        background-color: #0056b3; /* Couleur de fond du bouton au survol */
+    }
+    
+    .center4 {
+        text-align: center;
+        padding: 120px;
+        
+    }
+    .btn4 {
+        display: inline-block;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: var(--gradient-white); /* Couleur du texte */
+        background: linear-gradient(to right, #404040, #FFA500);
+        border: none; /* Bordure autour du bouton */
+        border-radius: none; /* Coins arrondis */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+            
+        }
+        
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        right: 80px;
+        top: 230px;
+    }
+    .scroll .social{
+        margin-top: 15;
+    }
+    .right {
+        right: -85%;
+    
+    }
+    
+    /* design de la partie footer*/
+    
+    footer{
+        margin-top: 162px;
+    }
+    footer .text-footer{
+        text-align: center;
+        font-size: 14px;
+    }
+    footer .social-footer{
+        text-align: center;
+        margin: 50px 0;
+    }
+    footer .social-item{
+        padding: 15px;
+    }
+    .hover:hover{
+        
+        filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+    }
+    .batman-item:hover {
+        transform: scale(1.1); 
+    }
+    footer .social-s{
+        text-align: center;
+        margin: 50px 0;
+
+    }
+
+
+    
+       
+    
+     
+/* design de la section5*//* design de la section*//* design de la section5*/
+#section5 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section5 .left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section5 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de l'article batman en 1964*/
+#container-5{
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-5 .sal5 {
+    margin-left: -70px;
+
+}
+.tete5 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+#container-5 .left5{
+    position: absolute;
+    background-size: 1Opx;
+    top: 8800px;
+    background: none;
+    border: none;
+    left: 240px;
+}
+
+/* Conteneur du bouton */
+.center5 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -330px;
+}
+
+.btn5:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center5 {
+    text-align: center;
+    padding: 140px;
+    
+}
+.btn5 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+
+/* design de la section6*//* design de la section6*//* design de la section6*/
+#section6 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section6 .left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section6 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie BATMAN NOM D'UNE VILLE*/
+#container-6 {
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-6 .sal6 {
+    margin-right: -30px;
+}
+.tete6 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+.left6 {
+    position: absolute;
+    background-size: 1Opx;
+    top: 10890px;
+    background: none;
+    border: none;
+    left: 170px;
+}
+
+/* Conteneur du bouton */
+ .center6 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -330px;
+}
+
+.btn6:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center6 {
+    text-align: center;
+    padding-top: 100px;
+    
+}
+.btn6 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+
+
+/* design de la section7*//* design de la section7*//* design de la section7*/
+#section7 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section7 .left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section7 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container-7 {
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-7 .sal7 {
+    margin-right: -270px;
+}
+.tete7 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+#container-7 .left7{
+    position: absolute;
+    top: 12590px;
+    background: none;
+    border: none;
+    left:240px;
+}
+#container-7 .left7-1{
+    position: absolute;
+    top: 12890px;
+    background: none;
+    border: none;
+    left: 180px;
+}
+#container-7 .right7{
+    position: absolute;
+    top: 12820px;
+    background: none;
+    border: none;
+    right: 180px;
+}
+
+/* Conteneur du bouton */
+.center7 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -340px;
+}
+
+.btn7:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center7 {
+    text-align: center;
+    padding: 140px;
+    
+}
+.btn7 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+
+
+/* design de la section8*//* design de la section8*//* design de la section8*/
+#section8 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section8 .left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section8 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container-8{
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-8 .sal8 {
+    margin-left: -80px;
+}
+.tete8 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+    margin-left: 80px;
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+#container-8 .left8{
+    position: absolute;
+    background-size: 1Opx;
+    top: 14520px;
+    background: none;
+    border: none;
+    left: 100px;
+}
+
+/* Conteneur du bouton */
+.center8 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -320px;
+}
+
+.btn8:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center8 {
+    text-align: center;
+    padding: 150px;
+    
+}
+.btn8 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+
+
+/* design de la section9*//* design de la section9*//* design de la section9*/
+#section9 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section9 .left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section9 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container-9 {
+    display: flexbox;
+    padding-top: 30px;
+}
+.sal9 {
+    margin-left: 70px;
+}
+.tete9 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+}
+.sal9 {
+    padding-left: 100px;
+
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+    padding-left: 500px;
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+#container-9 .left9{
+    position: absolute;
+    background-size: 1Opx;
+    top: 16500px;
+    background: none;
+    border: none;
+    left: 180px;
+}
+
+/* Conteneur du bouton */
+.center9 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -320px;
+    
+}
+
+.btn9:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center9 {
+    text-align: center;
+    padding: 150px;
+
+    
+}
+.btn9 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+
+
+/* design de la section10*//* design de la section10*//* design de la section10*/
+#section10 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section10.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section10 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container-10{
+    display: flexbox;
+    padding-top: 30px;
+}
+.sal10 {
+    margin-left: 200px;
+}
+.tete10 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+#container-10 .left10 {
+    position: absolute;
+    top: 18400px;
+    background: none;
+    border: none;
+    left: 185px;
+}
+#container-10 .left10-1{
+    position: absolute;
+    top: 18700px;
+    background: none;
+    border: none;
+    left: 190px;
+}
+#container-10 .right-10{
+    position: absolute;
+    top: 18750px;
+    background: none;
+    border: none;
+    right: 400px;
+}
+
+/* Conteneur du bouton */
+.center10 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -325px;
+}
+
+.btn10:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center10 {
+    text-align: center;
+    padding: 150px;
+    
+}
+.btn10 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+
+/* design de la section11*//* design de la section11*//* design de la section11*/
+#section11 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section11.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section11 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design du container-11*/
+#container-11 {
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-11 .sal11 {
+    margin-left: -120px;
+}
+.tete11 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container-11 .left11 {
+    position: absolute;
+    top: 20400px;
+    background: none;
+    border: none;
+    left: 270px;
+}
+#container-11 .right11-1 {
+    position: absolute;
+    top: 20300px;
+    background: none;
+    border: none;
+    right: 360px;
+}
+#container-11 .right11 {
+    position: absolute;
+    top: 20730px;
+    background: none;
+    border: none;
+    right: 500px;
+}
+
+/* Conteneur du bouton */
+.center11 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -340px;
+}
+
+.btn11:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center11 {
+    text-align: center;
+    padding: 140px;
+    
+}
+.btn11 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+/* design de la section12*//* design de la section12*//* design de la section12*/
+#section12 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section12.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section12 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de l'article container-12*/
+#container-12 {
+    display: flexbox;
+    padding-top: 30px;
+}
+.sal12 {
+    margin-left: 130px;
+    
+}
+#container-12 .tete12 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 10px;
+    margin: 0;
+    
+}
+
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container-12 .left12 {
+    position: absolute;
+    top: 22400px;
+    background: none;
+    border: none;
+    left: 110px;
+}
+
+/* Conteneur du bouton */
+.center12 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -310px;
+}
+
+.btn12:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center12 {
+    text-align: center;
+    padding: 140px;
+    
+}
+.btn12 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+/* design de la section13*//* design de la section13*//* design de la section13*/
+#section13 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section13.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section13 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container-13 {
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-13 .sal13 {
+    margin-left: 200px;
+}
+.tete13 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container-13 .left13 {
+    position: absolute;
+    top: 24300px;
+    background: none;
+    border: none;
+    left: 180px;
+}
+
+/* Conteneur du bouton */
+.center13 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -310px;
+}
+
+.btn13:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center13 {
+    text-align: center;
+    padding: 120px;
+    
+}
+.btn13 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+/* design de la section14*//* design de la section14*//* design de la section14*/
+#section14 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section14.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section14 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container-14 {
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-14 .sal14 {
+    margin-left: -40px;
+}
+.tete14 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container-14 .left14 {
+    position: absolute;
+    top: 26200px;
+    background: none;
+    border: none;
+    left: 130px;
+}
+
+/* Conteneur du bouton */
+.center14 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -300px;
+}
+
+.btn14:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center14 {
+    text-align: center;
+    padding: 140px;
+    
+}
+.btn14 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+/* design de la section15*//* design de la section15*//* design de la section15*/
+#section15 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section15.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section15 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container-15 {
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-15 .sal15 {
+    margin-left: 190px;
+}
+.tete15 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container-15 .left15 {
+    position: absolute;
+    top: 28200px;
+    background: none;
+    border: none;
+    left: 100px;
+}
+
+/* Conteneur du bouton */
+.center15 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -300px;
+}
+
+.btn15:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center15 {
+    text-align: center;
+    padding: 140px;
+    
+}
+.btn15 {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+/* design de la section16*//* design de la section16*//* design de la section16*/
+#section16 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section16.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section16 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de l'article container-16*/
+#container-16 {
+    display: flexbox;
+    padding-top: 30px;
+}
+#container-16 .sal16 {
+    margin-left: 180px;
+}
+.tete16 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container-16 .left16 {
+    position: absolute;
+    top: 30150px;
+    background: none;
+    border: none;
+    left: 160px;
+}
+
+/* Conteneur du bouton */
+.center16 {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding: 20px 550px; /* Espace au-dessus du bouton */
+    margin-left: -335px;
+}
+
+.btn16:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center16 {
+    text-align: center;
+    padding: 140px;
+    
+}
+.btn16 {
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+/* design de la section14*//* design de la section14*//* design de la section14*/
+#section14 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section14.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section14 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container{
+    display: flexbox;
+    padding-top: 30px;
+}
+.sal14 {
+    margin-left: 300px;
+}
+.tete14 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container .left14 {
+    position: absolute;
+    top: 25000px;
+    background: none;
+    border: none;
+    left: 160px;
+}
+
+/* Conteneur du bouton */
+.center {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center {
+    text-align: center;
+    padding: 30px;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+
+/* design de la section15*//* design de la section15*//* design de la section15*/
+#section15 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section15.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section15 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container{
+    display: flexbox;
+    padding-top: 30px;
+}
+.sal15 {
+    margin-left: 300px;
+}
+.tete15 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container .left15 {
+    position: absolute;
+    top: 27000px;
+    background: none;
+    border: none;
+    left: 160px;
+}
+
+/* Conteneur du bouton */
+.center {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center {
+    text-align: center;
+    padding: 30px;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
+/* design de la section16*//* design de la section16*//* design de la section16*/
+#section16 .up-bar {
+    border-top: 1px #727272 solid;
+    position: absolute;
+    top: 132px;
+    width: 83%;
+    left: 102px;
+}
+#section16.left-bar {
+    border-left: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    width: 102px;
+    left: 102px;
+}
+#section16 .right-bar {
+    border-right: 1px #727272 solid;
+    position: absolute;
+    height: 1055%;
+    right: 125px;
+}
+.down-bar {
+    border-top: 5px solid #727272;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 20px; /* Ajuste cette valeur en fonction de la hauteur du footer pour éviter le chevauchement */
+}
+
+/* design de la naviation*/
+ nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Affiche les listes côte à côte */  
+}
+ li {
+    display: inline-block; /* Affiche les éléments <li> côte à côte */
+    margin-right: 20px; /* Espace entre les éléments */
+}
+li .home{
+    text-decoration: none;
+}
+
+
+li a {
+  color:  white;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: rajdhani;
+  /*text-decoration: none;*/
+}
+nav ul a:hover {
+color: var(--yellow-color);
+}
+p {
+    font-size: 20px;
+}
+/* design de la partie entete hero*/
+#hero {
+    background-image: url(Batgame_1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block; /* Affiche l'image en tant que bloc pour permettre la gestion de l'espace */
+        margin-bottom: 20px; /* Ajoute de l'espace en bas de l'image pour que la flèche ne touche pas l'image */
+    
+    
+}
+#hero .mari{
+    position: fixed; /* Fixe l'élément par rapport à la fenêtre du navigateur */
+    top: 200px; /* Positionne l'élément à 20 pixels du haut de la fenêtre */
+    right: 20px; /* Positionne l'élément à 20 pixels du bord droit de la fenêtre */
+    z-index: 1000; /* Assure que l'élément reste au-dessus des autres éléments */
+}
+#hero .ts{
+    font-size: 20px;
+    padding: 300px 200px; /* Déplace le titre vers l'intérieur */
+    margin: 50px 0;
+    outline: none;
+}
+
+article p {
+    text-align: center;
+    padding: 100px 620px;
+}
+/* design de la partie batman chevalier*/
+#container{
+    display: flexbox;
+    padding-top: 30px;
+}
+.sal16 {
+    margin-left: 300px;
+}
+.tete16 {
+    text-align: center;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    padding-top: 50px;
+    margin-right: 10px;
+}
+.quiz_rep {
+    display: flex;
+    flex-direction: column; /* Aligne les éléments en colonne */
+    gap: 10px; /* Ajoute de l'espace entre les lignes */
+    max-width: 100%; /* Définit une largeur maximale pour le conteneur */
+    width: 100%; /* Assure que le conteneur peut utiliser toute la largeur disponible jusqu'à max-width */
+    padding: 20px 400px; /* Enlève le padding du conteneur principal */
+}
+
+/* Conteneur des réponses */
+.rep_group {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #333; /* Couleur de fond du conteneur (gris foncé) */
+    color: #fff; /* Couleur du texte (blanc) */
+    font-weight: bold; /* Texte en gras */
+    width: auto; /* Ajuste la largeur du conteneur en fonction du contenu */
+}
+
+/* Style de la case à cocher */
+.rep_group input[type="checkbox"] {
+    margin-right: 10px; /* Espace entre la case à cocher et le texte */
+}
+ #container .left16 {
+    position: absolute;
+    top: 29000px;
+    background: none;
+    border: none;
+    left: 160px;
+}
+
+/* Conteneur du bouton */
+.center {
+    display: flex;
+    justify-content: center; /* Centre le bouton horizontalement */
+    padding-top: 20px 550px; /* Espace au-dessus du bouton */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Couleur de fond du bouton au survol */
+}
+
+.center {
+    text-align: center;
+    padding: 30px;
+    
+}
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: var(--gradient-white); /* Couleur du texte */
+    background: linear-gradient(to right, #404040, #FFA500);
+    border: none; /* Bordure autour du bouton */
+    border-radius: none; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre douce */
+        
+    }
+    
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 230px;
+}
+.scroll .social{
+    margin-top: 15;
+}
+.right {
+    right: -85%;
+
+}
+
+/* design de la partie footer*/
+
+footer{
+    margin-top: 162px;
+    
+}
+#container-f {
+    margin-bottom: auto;
+}
+footer .text-footer{
+    text-align: center;
+    font-size: 14px;
+}
+footer .social-footer{
+    text-align: center;
+    margin: 50px 0;
+}
+footer .social-item{
+    padding: 15px;
+}
+.hover:hover{
+    
+    filter: brightness(0) saturate(100%) invert(88%) sepia(99%) saturate(2173%) hue-rotate(360deg) brightness(106%) contrast(103%);
+}
+.batman-item:hover {
+    transform: scale(1.1); 
+}
+footer .social-s{
+    text-align: center;
+    margin: 50px 0;
+
+}
+
